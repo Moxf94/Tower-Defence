@@ -3,26 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
+[RequireComponent(typeof(WayPoint))]
 public class CubeEditor : MonoBehaviour
 {
-
-
+   
     [SerializeField] [Range(1f,20f)] private float gridSize = 10f;
 
     TextMesh label;
+    Vector3 snaPos;
+    WayPoint waypoint;
+
+    private void Awake()
+    {
+        waypoint = GetComponent<WayPoint>();
+    }
     void Update()
     {
-        Vector3 snaPos;
+        SnapToGrid();
 
+        UpdateLabel();
+
+    }
+
+    private void SnapToGrid()
+    {
         snaPos.x = Mathf.RoundToInt(transform.position.x / gridSize) * gridSize;
         snaPos.y = 0f;
         snaPos.z = Mathf.RoundToInt(transform.position.z / gridSize) * gridSize;
         transform.position = snaPos;
+    }
 
+    private void UpdateLabel()
+    {
         label = GetComponentInChildren<TextMesh>();
         string labelName = snaPos.x / gridSize + "," + snaPos.z / gridSize;
         label.text = labelName;
         gameObject.name = labelName;
-
     }
 }

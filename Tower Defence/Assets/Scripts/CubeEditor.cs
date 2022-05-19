@@ -9,8 +9,8 @@ public class CubeEditor : MonoBehaviour
    
     const int gridSize = 10;
 
-    TextMesh label;
-    Vector3 snaPos;
+    
+    Vector3 gridPos;
     WayPoint waypoint;
 
     private void Awake()
@@ -35,8 +35,8 @@ public class CubeEditor : MonoBehaviour
     private void UpdateLabel()
     {
         int gridSize = waypoint.GetGridSize();
-        label = GetComponentInChildren<TextMesh>();
-        string labelName = snaPos.x / gridSize + "," + snaPos.z / gridSize;
+        TextMesh label = GetComponentInChildren<TextMesh>();
+        string labelName = waypoint.GetGridPos().x  + "," + waypoint.GetGridPos().y ;
         label.text = labelName;
         gameObject.name = labelName;
     }

@@ -7,13 +7,6 @@ public class WayPoint : MonoBehaviour
 
     const int gridSize = 10;
     Vector2Int gridPos;
-    
-    void Start()
-    {
-        
-    }
-
-
 
     public int GetGridSize()
     {
@@ -28,8 +21,4 @@ public class WayPoint : MonoBehaviour
             Mathf.RoundToInt(transform.position.z / gridSize));
     }
     
-    void Update()
-    {
-        
-    }
 }

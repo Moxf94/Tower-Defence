@@ -7,7 +7,7 @@ using UnityEngine;
 public class CubeEditor : MonoBehaviour
 {
    
-    [SerializeField] [Range(1f,20f)] private float gridSize = 10f;
+    const int gridSize = 10;
 
     TextMesh label;
     Vector3 snaPos;
@@ -27,14 +27,14 @@ public class CubeEditor : MonoBehaviour
 
     private void SnapToGrid()
     {
-        snaPos.x = Mathf.RoundToInt(transform.position.x / gridSize) * gridSize;
-        snaPos.y = 0f;
-        snaPos.z = Mathf.RoundToInt(transform.position.z / gridSize) * gridSize;
-        transform.position = snaPos;
+        int gridSize = waypoint.GetGridSize();
+     
+        transform.position = new Vector3(waypoint.GetGridPos().x * gridSize, 0f, waypoint.GetGridPos().y * gridSize);
     }
 
     private void UpdateLabel()
     {
+        int gridSize = waypoint.GetGridSize();
         label = GetComponentInChildren<TextMesh>();
         string labelName = snaPos.x / gridSize + "," + snaPos.z / gridSize;
         label.text = labelName;

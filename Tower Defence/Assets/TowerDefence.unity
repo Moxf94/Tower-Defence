@@ -131,12 +131,12 @@ PrefabInstance:
     - target: {fileID: 1210496415642359708, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Text
-      value: 0,0
+      value: 4,1
       objectReference: {fileID: 0}
     - target: {fileID: 4457092922481009940, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Name
-      value: 0,0
+      value: 4,1
       objectReference: {fileID: 0}
     - target: {fileID: 7965788560582286523, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
@@ -210,6 +210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 113871606}
+  - component: {fileID: 113871607}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -239,6 +240,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &113871607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113871605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43338d597d21324d9d62ba335b43485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &412064878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7965788560582286523, guid: 88c33479359d31047a23574c7288b008,
@@ -630,12 +643,12 @@ PrefabInstance:
     - target: {fileID: 1210496415642359708, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Text
-      value: 0,0
+      value: 3,0
       objectReference: {fileID: 0}
     - target: {fileID: 4457092922481009940, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Name
-      value: 0,0
+      value: 3,0
       objectReference: {fileID: 0}
     - target: {fileID: 7965788560582286523, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
@@ -722,12 +735,12 @@ PrefabInstance:
     - target: {fileID: 1210496415642359708, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Text
-      value: 0,0
+      value: 4,2
       objectReference: {fileID: 0}
     - target: {fileID: 4457092922481009940, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Name
-      value: 0,0
+      value: 4,2
       objectReference: {fileID: 0}
     - target: {fileID: 7965788560582286523, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
@@ -814,12 +827,12 @@ PrefabInstance:
     - target: {fileID: 1210496415642359708, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Text
-      value: 0,0
+      value: 4,0
       objectReference: {fileID: 0}
     - target: {fileID: 4457092922481009940, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Name
-      value: 0,0
+      value: 4,0
       objectReference: {fileID: 0}
     - target: {fileID: 7965788560582286523, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
@@ -906,12 +919,12 @@ PrefabInstance:
     - target: {fileID: 1210496415642359708, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Text
-      value: 0,0
+      value: 1,0
       objectReference: {fileID: 0}
     - target: {fileID: 4457092922481009940, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Name
-      value: 0,0
+      value: 1,0
       objectReference: {fileID: 0}
     - target: {fileID: 7965788560582286523, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
@@ -1010,12 +1023,12 @@ PrefabInstance:
     - target: {fileID: 1210496415642359708, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Text
-      value: 0,0
+      value: 4,3
       objectReference: {fileID: 0}
     - target: {fileID: 4457092922481009940, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Name
-      value: 0,0
+      value: 4,3
       objectReference: {fileID: 0}
     - target: {fileID: 7965788560582286523, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
@@ -1102,12 +1115,12 @@ PrefabInstance:
     - target: {fileID: 1210496415642359708, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Text
-      value: 0,0
+      value: 2,0
       objectReference: {fileID: 0}
     - target: {fileID: 4457092922481009940, guid: 88c33479359d31047a23574c7288b008,
         type: 3}
       propertyPath: m_Name
-      value: 0,0
+      value: 2,0
       objectReference: {fileID: 0}
     - target: {fileID: 7965788560582286523, guid: 88c33479359d31047a23574c7288b008,
         type: 3}

@@ -8,7 +8,7 @@ public class CubeEditor : MonoBehaviour
 {
    
     const int gridSize = 10;
-
+    
     
     Vector3 gridPos;
     WayPoint waypoint;

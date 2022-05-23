@@ -5,11 +5,13 @@ using UnityEngine;
 public class Pathfinder : MonoBehaviour
 {
     Dictionary<Vector2Int, WayPoint> grid = new Dictionary<Vector2Int, WayPoint>();
-    
+    [SerializeField] WayPoint startPoint, endPoint;
+
     void Start()
     {
         
         LoadBlocks();
+        SetColorStartAndEnd();
     }
 
     
@@ -26,9 +28,16 @@ public class Pathfinder : MonoBehaviour
             else
             {
                 grid.Add(waypoint.GetGridPos(), waypoint);
+                
             }
         }
         print("Grid");
+    }
+
+    void SetColorStartAndEnd()
+    {
+        startPoint.SetTopColor(Color.green);
+        endPoint.SetTopColor(Color.red);
     }
     void Update()
     {

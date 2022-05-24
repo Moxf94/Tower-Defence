@@ -7,14 +7,43 @@ public class Pathfinder : MonoBehaviour
     Dictionary<Vector2Int, WayPoint> grid = new Dictionary<Vector2Int, WayPoint>();
     [SerializeField] WayPoint startPoint, endPoint;
 
+    Vector2Int[] directions =
+    {
+        Vector2Int.up,
+        Vector2Int.right,
+        Vector2Int.down,
+        Vector2Int.left
+    };
+
     void Start()
     {
         
         LoadBlocks();
         SetColorStartAndEnd();
+        ExploreNearPoints();
     }
 
-    
+
+    private void ExploreNearPoints()
+    {
+        foreach(Vector2Int direction in directions)
+        {
+            Vector2Int nearPointCordinates =  startPoint.GetGridPos() + direction;
+
+            try
+            {
+                grid[nearPointCordinates].SetTopColor(Color.blue);
+            }
+            catch
+            {
+                Debug.LogWarning("Блок : " + nearPointCordinates + "отсутствует");
+            }
+            print("Проверено : " + nearPointCordinates);
+
+        }
+    }
+
+
     private void LoadBlocks()
     {
         var waypoints = FindObjectsOfType<WayPoint>();
